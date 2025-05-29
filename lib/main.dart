@@ -74,6 +74,13 @@ class MyHomePage extends StatelessWidget {
                   },
                   child: Text('Next'),
                 ),
+                SizedBox(width: 10), // Adds space between buttons
+                ElevatedButton(
+                  onPressed: () {
+                    appState.toggleFavorite();
+                  },
+                  child: Text('Toggle Favorite'),
+                ),
               ],
             ),
           ],
